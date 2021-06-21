@@ -1,0 +1,60 @@
+body
+{
+    text-align: center;
+    background-image: url('https://freellustrustrations.s3.us-east-2.amazonaws.com/free-images/freeimg_33784289freejpg850.jpg');
+    background-size: cover;
+}
+.container
+{
+    display: flex;
+}
+.item
+{
+    padding: 10px;
+    margin: 10px;
+}
+h2{
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: white;
+}
+header
+{
+    border-bottom:outset white 3px;
+}
+.navbar_ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+    
+}
+.navbar_ul a
+{
+    text-decoration: none;
+    color:brown
+}
+.navbar_ul li
+{
+    padding: 20px;
+    margin: 20px;
+    font-size: 25px;
+}
+.item p
+{
+    color:black ;
+    font-size: 20px;
+    text-align: justify;
+    font-weight: bold;
+}
+footer p{
+    color:black;
+    margin-top: 40px;
+    font-size: 40px;
+    border: dotted darkred 2px;
+    padding: 5px 0;
+}
+#userName{
+    color: white;
+}
