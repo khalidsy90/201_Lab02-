@@ -11,6 +11,7 @@ let questions=["Are you more than 25 years old?",
 "Have you used GitHub before?",
 "Do you hold your phone first when you wake up?",
 "Have you tried isolation from technology before?"]
+
 let q=new Array()
 for (let i = 0; i < questions.length; i++) 
 {
@@ -24,13 +25,16 @@ switch (q[i]) {
     case "y":
         case "yes":
         alert(`question ${i+1} is YES`)
+        console.log(`The answer is ${q[i]}`)
         break;
     case "n":
         case "no":
         alert(`question ${i+1} is NO`)
+        console.log(`The answer is ${q[i]}`)
         break;
     default:
         alert(`Opps ..question ${i+1} You entered something different`)
+        console.log(`The answer is ${q[i]}`)
         break;
     }
 }
