@@ -64,6 +64,8 @@ let btn1=document.getElementById("btn1")
                 //     alert("You Entered Something Wrong \n The website will reload to try again")
                 //     window.location.reload()
                 //     break;
+                //
+                //     //note
                 // }
         }
     //  alert(`you answered YES ${num_yes} times`)
