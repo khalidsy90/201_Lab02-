@@ -18,40 +18,56 @@ let btn1=document.getElementById("btn1")
     let q=new Array()
     let num_yes=0
     let num_no=0
-   
+    let answers=['no','yes','yes','no','no']
 
     function lab02()
     {
         for (let i = 0; i < question.length; i++) 
         {
-                q.push(prompt(question[i]).toLowerCase())
+            let prom=prompt(question[i]).toLowerCase()
+            if (prom == 'y' || prom =='yes')
+            {
+                q.push('yes')
+            }
+            else if(prom =='n' || 'no')
+            {
+                q.push("no")
+            }
+            else
+            {
+                alert("You Entered Something Wrong \n The website will reload to try again")
+                window.location.reload()
+            }
+            if(q[i]==answers[i])score++
+
+
                 
-                if(q[i] === 'y' || q[i] === 'yes' || q[i] === 'n' || q[i] === 'no')
-                {
-                    alert(` your answer is ${q[i]}`)
-                    console.log(q[i])
-                    switch (q[i]) {
-                        case 'y':
-                            case 'yes':
-                                num_yes++
-                                score++
-                            break;
-                        case 'n' :
-                            case 'no':
-                                num_no++
-                        default:
-                            break;
-                    }
-                }
-                else
-                {
-                    alert("You Entered Something Wrong \n The website will reload to try again")
-                    window.location.reload()
-                    break;
-                }
+                // if(q[i] === 'y' || q[i] === 'yes' || q[i] === 'n' || q[i] === 'no')
+                // {
+                //     alert(` your answer is ${q[i]}`)
+                //     console.log(q[i])
+                //     switch (q[i]) {
+                //         case 'y':
+                //             case 'yes':
+                //                 num_yes++
+                //                 score++
+                //             break;
+                //         case 'n' :
+                //             case 'no':
+                //                 num_no++
+                //         default:
+                //             break;
+                //     }
+                // }
+                // else
+                // {
+                //     alert("You Entered Something Wrong \n The website will reload to try again")
+                //     window.location.reload()
+                //     break;
+                // }
         }
-     alert(`you answered YES ${num_yes} times`)
-     alert(`you answered NO ${num_no} times`)
+    //  alert(`you answered YES ${num_yes} times`)
+    //  alert(`you answered NO ${num_no} times`)
     
     }
    //#endregion
