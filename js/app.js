@@ -49,7 +49,8 @@ let btn1=document.getElementById("btn1")
             {
                 alert("Your answer is Wrong")
             }
-            
+        }
+    }
 function lab03()
 {
 //#region lab03 -2
