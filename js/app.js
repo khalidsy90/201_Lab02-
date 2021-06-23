@@ -39,7 +39,7 @@ let btn1=document.getElementById("btn1")
                 window.location.reload()
                 break
             }
-            
+
             if(q[i]==answers[i])
             {
                 score++
@@ -49,12 +49,7 @@ let btn1=document.getElementById("btn1")
             {
                 alert("Your answer is Wrong")
             }
-
-         
-            
-
-
-                
+                //#region last solve
                 // if(q[i] === 'y' || q[i] === 'yes' || q[i] === 'n' || q[i] === 'no')
                 // {
                 //     alert(` your answer is ${q[i]}`)
@@ -85,6 +80,7 @@ let btn1=document.getElementById("btn1")
     //  alert(`you answered NO ${num_no} times`)
     
     }
+    //#endregion
    //#endregion
 function lab03()
 {
