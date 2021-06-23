@@ -49,47 +49,9 @@ let btn1=document.getElementById("btn1")
             {
                 alert("Your answer is Wrong")
             }
-<<<<<<< HEAD
-                //#region last solve
-                // if(q[i] === 'y' || q[i] === 'yes' || q[i] === 'n' || q[i] === 'no')
-                // {
-                //     alert(` your answer is ${q[i]}`)
-                //     console.log(q[i])
-                //     switch (q[i]) {
-                //         case 'y':
-                //             case 'yes':
-                //                 num_yes++
-                //                 score++
-                //             break;
-                //         case 'n' :
-                //             case 'no':
-                //                 num_no++
-                //         default:
-                //             break;
-                //     }
-                // }
-                // else
-                // {
-                //     alert("You Entered Something Wrong \n The website will reload to try again")
-                //     window.location.reload()
-                //     break;
-                //
-                //     //note
-                // }
-        }
-    //  alert(`you answered YES ${num_yes} times`)
-    //  alert(`you answered NO ${num_no} times`)
-    
-    }
-    //#endregion
-   //#endregion
-=======
-
-
->>>>>>> 3a22f42736078c46993a0999ffa53cc42ccfcfb9
+            
 function lab03()
 {
-
 //#region lab03 -2
 alert("Let's play a nice game")
 alert("Can you guess what my lucky number is ?")
