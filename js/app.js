@@ -1,51 +1,18 @@
 'use strict'
+//#region lab02
+let score=0;
 let userName=prompt("plz Enter Your Name")
 alert("You are welcome "+userName)
 let add_greeting=document.getElementById("userName")
 add_greeting.innerHTML="Welcome in my websit "+userName
-//#region last solve
-// alert("I will ask 5 questions As part of a survey \n please answer as follows \n Your answer should be \n Y or N \n Yes Or No")
-
-// let questions=["Are you more than 25 years old?",
-// "Do you spend most of your time on social media?",
-// "Have you used GitHub before?",
-// "Do you hold your phone first when you wake up?",
-// "Have you tried isolation from technology before?"]
-
-// let q=new Array()
-// for (let i = 0; i < questions.length; i++) 
-// {
-//  q.push(prompt(questions[i]).toLowerCase())
-// }
-
-// for (let i = 0; i < q.length; i++) 
-// {
-    
-// switch (q[i]) {
-//     case "y":
-//         case "yes":
-//         alert(`question ${i+1} is YES`)
-//         console.log(`The answer is ${q[i]}`)
-//         break;
-//     case "n":
-//         case "no":
-//         alert(`question ${i+1} is NO`)
-//         console.log(`The answer is ${q[i]}`)
-//         break;
-//     default:
-//         alert(`Opps ..question ${i+1} You entered something different`)
-//         console.log(`The answer is ${q[i]}`)
-//         break;
-//     }
-// }
-//#endregion
 
 let btn=document.getElementById("btn")
+let btn1=document.getElementById("btn1")
 
 
     alert(`Hello again ${userName} \n please read my bio and answer the questions`)
     alert(`I wil ask you 5 questions and you will answer me Yes || No \n you can write Y || N`)
-    alert('When you have finished reading the bio, press the start quiz button below')
+    alert('When you have finished reading the bio, press the start quiz lab02 button below')
 
     let question =['Did I graduate from Yarmouk University?','Have I been studying web developmen since 2009?','Am I a Sitecore Certified Professional Web Developer ?','Do I study chemistry in my spare time?','Do I have a desire to quit my profession?']
     let q=new Array()
@@ -53,7 +20,7 @@ let btn=document.getElementById("btn")
     let num_no=0
    
 
-    function start_quiz()
+    function lab02()
     {
         for (let i = 0; i < question.length; i++) 
         {
@@ -67,6 +34,7 @@ let btn=document.getElementById("btn")
                         case 'y':
                             case 'yes':
                                 num_yes++
+                                score++
                             break;
                         case 'n' :
                             case 'no':
@@ -86,4 +54,79 @@ let btn=document.getElementById("btn")
      alert(`you answered NO ${num_no} times`)
     
     }
-btn.addEventListener("click",start_quiz)   
+   //#endregion
+function lab03()
+{
+    
+
+
+//#region lab03 -2
+alert("Let's play a nice game")
+alert("Can you guess what my lucky number is ?")
+alert("I'll give you 6 tries to guess")
+alert("I'll give you a hint hint \n The number is greater than 10 and less than 20")
+
+let luckyNum=11
+
+for (let i = 0; i < 6; i++) 
+{
+    let userNum=parseInt(prompt(`This is the ${i+1} attempt`))
+    let num=userNum - 11
+    console.log(num)
+    if(num >0 && num <=3)
+    {
+        alert("too low")
+    }
+    else if(num >3)
+    {
+        alert("too high”")
+    }
+    else if(num == 0)
+    {
+        alert("Gosh \n You guessed the right number \n It's already 11")  
+        score++ 
+    }
+    else if(num <0)
+    {
+        alert("You seem to have forgotten that the number is greater than 10")
+        alert("I'll give you another try")
+        window.location.reload()
+        break;
+    }
+    else
+    {
+        alert("You Need to add jus a number")
+        window.location.reload()
+        break;
+    }
+}
+alert("My luck number is 11")
+//#endregion 
+
+//#region lab02 -3
+alert("Let's test your knowledge about the most famous Jordanian dishes that I like best")
+alert("I'll give you 6 tries to guess")
+
+
+let food=['mansaf','falafel','maqluba','shawarma','fattet hummus']
+
+for (let i = 0; i < 6; i++) 
+{
+   let meal=prompt(`Food Number ${i+1}`).toLowerCase()
+   if(food.includes(meal))
+   {
+       alert("Right Food Go Ahead")
+       score++
+   }
+   else
+   {
+       alert("Wrong Food")
+   }
+}
+alert("The Food are :mansaf,falafel,maqluba,shawarma,fattet hummus ")
+alert(`Your Total score is ${score}`)
+//#endregion
+}
+
+btn.addEventListener("click",lab02)
+btn1.addEventListener("click",lab03)
