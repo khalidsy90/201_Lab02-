@@ -50,46 +50,9 @@ let btn1=document.getElementById("btn1")
                 alert("Your answer is Wrong")
             }
 
-         
-            
 
-
-                
-                // if(q[i] === 'y' || q[i] === 'yes' || q[i] === 'n' || q[i] === 'no')
-                // {
-                //     alert(` your answer is ${q[i]}`)
-                //     console.log(q[i])
-                //     switch (q[i]) {
-                //         case 'y':
-                //             case 'yes':
-                //                 num_yes++
-                //                 score++
-                //             break;
-                //         case 'n' :
-                //             case 'no':
-                //                 num_no++
-                //         default:
-                //             break;
-                //     }
-                // }
-                // else
-                // {
-                //     alert("You Entered Something Wrong \n The website will reload to try again")
-                //     window.location.reload()
-                //     break;
-                //
-                //     //note
-                // }
-        }
-    //  alert(`you answered YES ${num_yes} times`)
-    //  alert(`you answered NO ${num_no} times`)
-    
-    }
-   //#endregion
 function lab03()
 {
-    
-
 
 //#region lab03 -2
 alert("Let's play a nice game")
