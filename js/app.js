@@ -118,6 +118,7 @@ for (let i = 0; i < 6; i++)
    {
        alert("Right Food Go Ahead")
        score++
+       break;
    }
    else
    {
