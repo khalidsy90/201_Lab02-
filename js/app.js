@@ -27,7 +27,7 @@ let btn1=document.getElementById("btn1")
             let prom=prompt(question[i]).toLowerCase()
             if (prom == 'y' || prom =='yes')
             {
-                q.push('yes')
+                q.push('yes')            
             }
             else if(prom =='n' || 'no')
             {
@@ -37,8 +37,21 @@ let btn1=document.getElementById("btn1")
             {
                 alert("You Entered Something Wrong \n The website will reload to try again")
                 window.location.reload()
+                break
             }
-            if(q[i]==answers[i])score++
+            
+            if(q[i]==answers[i])
+            {
+                score++
+                alert("Your answer is correct")
+            }
+            else
+            {
+                alert("Your answer is Wrong")
+            }
+
+         
+            
 
 
                 
