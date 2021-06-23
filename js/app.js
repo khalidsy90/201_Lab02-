@@ -63,12 +63,12 @@ function lab03()
 //#region lab03 -2
 alert("Let's play a nice game")
 alert("Can you guess what my lucky number is ?")
-alert("I'll give you 6 tries to guess")
+alert("I'll give you 4 tries to guess")
 alert("I'll give you a hint \n The number is greater than 10 and less than 20")
 
 let luckyNum=11
 
-for (let i = 0; i < 6; i++) 
+for (let i = 0; i < 4; i++) 
 {
     let userNum=parseInt(prompt(`This is the ${i+1} attempt`))
     let num=userNum - 11
