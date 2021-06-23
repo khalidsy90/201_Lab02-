@@ -110,20 +110,23 @@ alert("I'll give you 6 tries to guess")
 
 
 let food=['mansaf','falafel','maqluba','shawarma','fattet hummus']
-
-for (let i = 0; i < 6; i++) 
+let y=0
+let flag=false
+for ( y = 0; y < 6; y++) 
 {
-   let meal=prompt(`Food Number ${i+1}`).toLowerCase()
-   if(food.includes(meal))
+   let meal=prompt(`Food Number ${y+1}`).toLowerCase()
+   for (let x = 0; x < food.length; x++) 
    {
-       alert("Right Food Go Ahead")
-       score++
-       break;
-   }
-   else
-   {
-       alert("Wrong Food")
-   }
+        if(meal == food[x])
+        {
+            alert("Right Food")
+            score++
+            y=10
+            flag=true
+            break;
+        }  
+   }  
+   if(flag == false) alert("Wrong Food")  
 }
 alert("The Food are :mansaf,falafel,maqluba,shawarma,fattet hummus ")
 alert(`Your Total score is ${score}`)
