@@ -49,6 +49,7 @@ let btn1=document.getElementById("btn1")
             {
                 alert("Your answer is Wrong")
             }
+<<<<<<< HEAD
                 //#region last solve
                 // if(q[i] === 'y' || q[i] === 'yes' || q[i] === 'n' || q[i] === 'no')
                 // {
@@ -82,10 +83,12 @@ let btn1=document.getElementById("btn1")
     }
     //#endregion
    //#endregion
+=======
+
+
+>>>>>>> 3a22f42736078c46993a0999ffa53cc42ccfcfb9
 function lab03()
 {
-    
-
 
 //#region lab03 -2
 alert("Let's play a nice game")
