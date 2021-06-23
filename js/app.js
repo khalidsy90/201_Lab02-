@@ -64,7 +64,7 @@ function lab03()
 alert("Let's play a nice game")
 alert("Can you guess what my lucky number is ?")
 alert("I'll give you 6 tries to guess")
-alert("I'll give you a hint hint \n The number is greater than 10 and less than 20")
+alert("I'll give you a hint \n The number is greater than 10 and less than 20")
 
 let luckyNum=11
 
@@ -75,16 +75,17 @@ for (let i = 0; i < 6; i++)
     console.log(num)
     if(num >0 && num <=3)
     {
-        alert("too low")
+        alert("too low \n You are close to the correct answer")
     }
     else if(num >3)
     {
-        alert("too high”")
+        alert("too high")
     }
     else if(num == 0)
     {
         alert("Gosh \n You guessed the right number \n It's already 11")  
         score++ 
+        break
     }
     else if(num <0)
     {
