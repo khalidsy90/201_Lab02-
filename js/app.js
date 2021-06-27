@@ -54,9 +54,8 @@ let btn1=document.getElementById("btn1")
             }
             else
             {
-                alert('You entered an invalid answer \n I ll give you a chance to try again \n The browser will update again to give you a try')
-                window.location.reload()
-                break
+                alert('You entered an invalid answer \n I ll give you a chance to try again')
+               i-=1
             }
            
         }
