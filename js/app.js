@@ -3,6 +3,7 @@
 let score=0;
 let userName=prompt("plz Enter Your Name")
 alert("You are welcome "+userName)
+
 let add_greeting=document.getElementById("userName")
 add_greeting.innerHTML="Welcome in my websit "+userName
 
@@ -17,6 +18,8 @@ let btn1=document.getElementById("btn1")
     let question =['Did I graduate from Yarmouk University?','Have I been studying web developmen since 2009?','Am I a Sitecore Certified Professional Web Developer ?','Do I study chemistry in my spare time?','Do I have a desire to quit my profession?']
     let q=new Array()
     let answers=['no','yes','yes','no','no']
+
+
 
     function lab02()
     {
@@ -60,6 +63,9 @@ let btn1=document.getElementById("btn1")
            
         }
     }
+
+
+       
 function lab03()
 {
 //#region lab03 -2
@@ -131,5 +137,7 @@ alert(`Your Total score is ${score}`)
 //#endregion
 }
 
+
 btn.addEventListener("click",lab02)
 btn1.addEventListener("click",lab03)
+
